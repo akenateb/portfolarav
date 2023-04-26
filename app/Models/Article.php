@@ -20,9 +20,12 @@ class Article extends Model
 
     protected static function boot(){
         parent::boot();
-        self::creating(function (Article $article){
-            $article->user_id = auth()->id();
-        });
+        if (!app()->runningInConsole()){
+            self::creating(function (Article $article){
+                $article->user_id = auth()->id();
+            });
+        }
+
     }
 
     public function user(): BelongsTo{
