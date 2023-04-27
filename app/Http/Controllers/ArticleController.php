@@ -17,7 +17,7 @@ class ArticleController extends Controller
     {
 
         $articles = Article::with("category")->OrderByDesc("created_at")->paginate();
-        dd($articles);
+        return view('articles.list',compact("articles"));
     }
 
     /**
