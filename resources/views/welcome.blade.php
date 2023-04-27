@@ -31,7 +31,7 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans antialiased">
+<body class="font-sans antialiased dark">
 <div id="wrapper" class="clearfix">
 <header id="header" class="full-header dark">
     <div id="header-wrap">
@@ -96,16 +96,12 @@
 </header><!-- #header end -->
 <!-- Page Title
 		============================================= -->
-<section id="page-title" class="page-title-parallax page-title-dark" style="background-image: url('images/inet2.jpg'); background-size: cover; padding: 120px 0;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
+<section id="page-title" class="page-title-parallax page-title-dark" style="background-image: url('images/inet.jpg'); background-size: cover; padding: 120px 0;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
 
     <div class="container clearfix">
-        <h1>Page Title Parallax</h1>
-        <span>A Short Page Title Tagline</span>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">List</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Articles</li>
-        </ol>
+        <h1>Listado de artículos únicos</h1>
+        <span>Puedes publicar si te registras</span>
+
     </div>
 
 </section><!-- #page-title end -->

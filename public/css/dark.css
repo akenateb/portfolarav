@@ -27,7 +27,7 @@ body.dark,
 .dark .page-transition-wrap,
 body.dark #side-panel,
 body #side-panel.dark {
-	background-color: #383838;
+	background-color: #0c1c2d;
 }
 
 .dark .css3-spinner > div {
@@ -102,7 +102,7 @@ body #side-panel.dark {
 }
 
 .dark #header-wrap {
-	background-color: #333;
+	background-color: #0c1c2d;
 }
 
 @media (min-width: 992px) {
