@@ -20,8 +20,8 @@ class ArticleFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->name(),
-            'content' => fake()->unique()->safeEmail(),
+            'title' => fake()->text('30'),
+            'content' => fake()->text(),
             'category_id'=>Category::all()->random(1)->first()->id,
             'user_id'=>User::all()->random(1)->first()->id,
             'created_at'=>now(),

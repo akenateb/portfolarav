@@ -3,16 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
+    protected Article $article;
+    protected array $articles = [];
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index():Renderable
     {
-        //
+
+        $articles = Article::with("category")->OrderByDesc("created_at")->paginate();
+        dd($articles);
     }
 
     /**
