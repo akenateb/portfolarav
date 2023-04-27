@@ -1739,6 +1739,7 @@ body #side-panel.dark {
 	color: #999;
 	background-color: rgba(0,0,0,0.2);
 	border-color: rgba(255,255,255,0.15);
+    width: 60px;
 }
 
 .dark .form-select:not(.not-dark) {
@@ -1756,6 +1757,7 @@ body #side-panel.dark {
 .dark .form-select:not(.not-dark):focus {
 	background-color: rgba(0,0,0,0.3);
 	border-color: rgba(255,255,255,0.25) !important;
+
 }
 
 .dark .form-control:not(.not-dark)::-moz-placeholder { color: #666; }

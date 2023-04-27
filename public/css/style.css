@@ -15371,8 +15371,8 @@ input.switch-flat-xlarge.switch-toggle-flat:checked + label::after { margin-left
 .page-link:hover,
 .page-link:focus {
 	color: #FFF !important;
-	background-color: #1ABC9C !important;
-	border-color: #1ABC9C !important;
+	background-color: #0d1c2c !important;
+	border-color: #FFFFFF !important;
 }
 
 .nav-pills > li.active > a,
