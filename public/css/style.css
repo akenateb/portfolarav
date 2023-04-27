@@ -4790,7 +4790,7 @@ body:not(.top-search-open) .top-search-parent #primary-menu-trigger {
 
 .header-misc-element,
 .header-misc-icon {
-
+    margin-right: 10px;
 }
 
 .header-misc-icon > a {
