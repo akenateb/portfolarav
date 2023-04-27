@@ -3407,6 +3407,7 @@ html[xmlns] .slider-wrap {
 	-ms-flex-align: center;
 	margin-right: auto;
 	max-height: 100%;
+    margin-left: 20px;
 }
 
 #logo a {
