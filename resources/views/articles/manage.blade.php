@@ -5,12 +5,21 @@
 @endsection
 
 @section('content')
+    @if($errors->any())
+        <div class="bg-red-500 text-white p-4">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <form method="post" action="{{ $action }}">
         @csrf
         @if($article->id) @method("PUT") @endif
         <div class="container px-5 py-24 mx-auto flex">
             <div class="bg-gray-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
-                <h2 class="text-white text-lg mb-1 font-medium title-font">Creando/Editando</h2>
+                <h2 class="text-white text-lg mb-1 font-medium title-font">{{ __($titlehead) }}</h2>
 
                 <div class="relative mb-4">
                     <label for="content" class="leading-7 text-sm text-gray-400">{{ __("Title") }}</label>
