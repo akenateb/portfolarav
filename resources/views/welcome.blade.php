@@ -46,10 +46,10 @@
                     <!-- Logo
                     ============================================= -->
                     <div id="logo">
-                        <a href="https://www.microporfolio.com" class="standard-logo" data-dark-logo="images/logo.png"><img
+                        <a href="https://www.microporfolio.com" class="standard-logo" data-dark-logo="{{ URL::asset('images/logo.png') }}"><img
                                 src="{{ URL::asset('images/logo.png') }}" alt="Canvas Logo"></a>
                         <a href="https://www.microporfolio.com" class="retina-logo" data-dark-logo="{{ URL::asset('images/logo.png') }}"><img
-                                src="images/logo.png" alt="Canvas Logo"></a>
+                                src="{{ URL::asset('images/logo.png') }}" alt="Canvas Logo"></a>
                     </div><!-- #logo end -->
 
                     <div class="header-misc">
@@ -230,7 +230,11 @@
     <section id="content">
         <div class="content-wrap">
             <div class="container clearfix">
-
+                @if(session()->has("success"))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('success') }}
+                    </div>
+                @endif
                 @yield('content')
 
             </div>

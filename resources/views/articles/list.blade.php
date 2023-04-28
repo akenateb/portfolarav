@@ -35,10 +35,16 @@
             @foreach($articles as $article)
                 <tr>
                     <td>{{ $article->id }}</td>
-                    <td>{{ $article->title }}</td>
+                    <td><a href="{{ route('articles.show',["article"=>$article]) }}">{{ $article->title }}</a></td>
                     <td>{{ $article->getExcerptAttribute($article->content) }}</td>
                     <td>{{ $article->created_at }}</td>
-                    <td><a href="" class="btn btn-sm btn-warning">Editar</a><a href="" class="btn btn-sm btn-danger">Editar</a></td>
+                    <td><a href="{{ route('articles.edit',["article"=>$article]) }}" class="btn btn-sm btn-warning">{{__('Editar')}}</a>
+                        <form method="post" action="{{ route('articles.destroy', ["article"=>$article]) }}">
+                            @csrf
+                            @method('DELETE')
+
+                            <button class="btn btn-sm btn-danger" name="delete">{{ __("Delete") }}</button>
+                        </form></td>
                 </tr>
 
             @endforeach
