@@ -16,8 +16,6 @@ class Article extends Model
         "title","content","category_id","user_id"
     ];
 
-    protected $perPage = 5;
-
     protected static function boot(){
         parent::boot();
         if (!app()->runningInConsole()){

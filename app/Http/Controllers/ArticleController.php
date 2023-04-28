@@ -16,7 +16,7 @@ class ArticleController extends Controller
     public function index():Renderable
     {
 
-        $articles = Article::with("category")->OrderByDesc("created_at")->paginate();
+        $articles = Article::with("category")->latest("created_at")->get();
         return view('articles.list',compact("articles"));
     }
 
@@ -25,7 +25,10 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        $article = new Article();
+        $titlehead = __("Creando Articulo");
+        $action = route("articles.store");
+        return view('articles.manage', compact("article","titlehead","action"));
     }
 
     /**
@@ -33,7 +36,7 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo "pepe";
     }
 
     /**

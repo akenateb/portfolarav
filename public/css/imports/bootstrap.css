@@ -1970,7 +1970,7 @@ progress {
 
 .table-striped > tbody > tr:nth-of-type(odd) {
   --bs-table-accent-bg: var(--bs-table-striped-bg);
-  color: var(--bs-table-striped-color);
+  color: white!important;
 }
 
 .table-active {

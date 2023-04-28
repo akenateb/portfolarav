@@ -38,7 +38,7 @@
                     <td>{{ $article->title }}</td>
                     <td>{{ $article->getExcerptAttribute($article->content) }}</td>
                     <td>{{ $article->created_at }}</td>
-                    <td></td>
+                    <td><a href="" class="btn btn-sm btn-warning">Editar</a><a href="" class="btn btn-sm btn-danger">Editar</a></td>
                 </tr>
 
             @endforeach

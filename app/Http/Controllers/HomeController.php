@@ -14,7 +14,8 @@ class HomeController extends Controller
 
     public function index(){
 
-        $articles = Article::with("category")->OrderByDesc("created_at")->paginate();
+        $articles = Article::with("category")->OrderByDesc("created_at")->get();
         return view('articles.list',compact("articles"));
+
     }
 }
