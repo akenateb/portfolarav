@@ -317,7 +317,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
   top: 0;
   left: 0;
   z-index: 5;
-  background: transparent url("images/grid.png") repeat;
+  /*background: transparent url("") repeat;*/
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
@@ -339,8 +339,8 @@ body:not(.has-plugin-html5video) .video-wrap video {
   z-index: 20;
   max-width: 550px;
   color: #EEE;
-  font-size: 300;
-  font-weight: 300;
+  font-size: 30px;
+  font-weight: 30;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   transition: top 0.3s ease;
 }
@@ -518,7 +518,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 .flex-next:hover,
 .slider-arrow-top-sm:hover,
 .slider-arrow-bottom-sm:hover {
-  background-color: rgba(0, 0, 0, 0.6) !important !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
 /* Slide Number
