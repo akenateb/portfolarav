@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About MiniNews
 
 MiniNews is a laravel 10 based application. It has a simple function, it uploads articles and users checking that each article is unique as users. Using the last version of Laravel, it takes the pain out of development by easing common tasks used in many web projects, such as:
 
